@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Teste</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="index_styles.css">
+        
+    </head>
+    
+    <body style="background-color: rgb(6.7, 6.7, 6.7);">
+        <div id="bloco_id"class="bloco"></div>
+        <div><img class="img_back_members" id="imagetest2" src="images/perfil_leo.jpg" alt="jpg" height="100" width="100"></div>
+        <div><img class="img_back_members" id="imagetest2" src="images/perfil_t0.jpg" alt="jpg" height="100" width="100" style = "left:25%; z-index: -1;"></div>
+        <div><img class="img_back_members" id="imagetest2" src="images/perfil_t1.jpg" alt="jpg" height="100" width="100" style = "left:75%; z-index: -1;"></div>
+        
+        <div id="texto" class="texto_members_over"><p class="texto_members">Lima,<br>Leonardo</p><p class="texto_bio_members">Fundador, CEO, Artista Char. e Amb. 3D, Programador,
+        <br>Animador, Sonorizador, Desenvolvedor Web.</p></div>
+        
+        <script>
+            $(document).ready(function(){
+            $("#imagetest2").click(function(){
+                $("#imagetest2").toggleClass("img_back_open")
+                $("#texto").toggleClass("texto_toggle")
+                $("#bloco_id").toggleClass("bloco_fade")
+                
+            })
+            })
+            </script>
+ 
+    </body>
+</html>
